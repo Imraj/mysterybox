@@ -1,0 +1,35 @@
+<!--
+  Generated template for the MachinePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Machine</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="card-background-page">
+
+  <button ion-button color="secondary" outline>Wallet : ${{ balance }}</button>
+  <button ion-button color="danger" (click)="purchaseToken()" outline float-right>$</button>
+
+	<ion-slides pager slidesPerView="2" parallax="true" spaceBetween="10" >
+
+	  <ion-slide  *ngFor="let machine of machines | async" (click)="itemSelected(machine)">
+
+      <!-- <img  height="500" src="{{ machine.image }}" /> -->
+      <ion-card>
+        <img style="width:10em;height:10em;" src="{{ machine.image }}" />
+        <div class="card-title">Machine {{machine.machine}}</div>
+      </ion-card>
+      
+	  </ion-slide>
+
+	</ion-slides>
+
+</ion-content>
