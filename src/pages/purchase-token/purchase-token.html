@@ -4,6 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
+
+
 <ion-header>
 
   <ion-navbar>
@@ -15,10 +18,10 @@
 
 <ion-content padding>
 
-	<button ion-button color="light" block>1 Token ($10.00)</button>
-	<button ion-button block>5 Token ($50.00)</button>
-	<button ion-button color="secondary" block>10 Token ($100.00)</button>
-	<button ion-button color="danger" block>50 Token ($500.00)</button>
-	<button ion-button color="dark" block>100 Token ($1000.00)</button>
+	<button ion-button color="light" block (onclick)="purchaseToken(1)">1 Token ($10.00)</button>
+	<button ion-button style="margin-top : 1em;" class="tokenBtn" block (onclick)="purchaseToken(5)">5 Token ($50.00)</button>
+	<button ion-button style="margin-top : 1em;" class="tokenBtn" color="secondary" block (onclick)="purchaseToken(10)">10 Token ($100.00)</button>
+	<button ion-button style="margin-top : 1em;" class="tokenBtn" color="danger" block (onclick)="purchaseToken(50)">50 Token ($500.00)</button>
+	<button ion-button style="margin-top : 1em;"class="tokenBtn" color="dark" block (onclick)="purchaseToken(100)">100 Token ($1000.00)</button>
 
 </ion-content>

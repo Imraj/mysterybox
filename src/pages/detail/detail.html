@@ -34,31 +34,31 @@
   		<ion-col id="container" (click)="boxClicked(1,1,0)">
   			<div [style.backgroundColor]="getStyle(0)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize0" id="navi">
+  			<div *ngIf="showp0" style="background-color:red;height:60px" [ngClass]="dropPrize0" id="navi">
   			</div>
   		</ion-col>
   		<ion-col id="container" (click)="boxClicked(1,2,1)">
 				<div [style.backgroundColor]="getStyle(1)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize1" id="navi">
+  			<div *ngIf="showp1" style="background-color:red;height:60px" [ngClass]="dropPrize1" id="navi">
   			</div>
   		</ion-col>
   		<ion-col id="container" (click)="boxClicked(1,3,2)">
 				<div [style.backgroundColor]="getStyle(2)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize2"  id="navi">
+  			<div *ngIf="showp2" style="background-color:red;height:60px" [ngClass]="dropPrize2"  id="navi">
   			</div>
   		</ion-col>
   		<ion-col id="container" (click)="boxClicked(1,4,3)">
 				<div [style.backgroundColor]="getStyle(3)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize3" id="navi">
+  			<div *ngIf="showp3" style="background-color:red;height:60px" [ngClass]="dropPrize3" id="navi">
   			</div>
   		</ion-col>
   		<ion-col id="container" (click)="boxClicked(1,5,4)">
 				<div [style.backgroundColor]="getStyle(4)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize4"  id="navi">
+  			<div *ngIf="showp4" style="background-color:red;height:60px" [ngClass]="dropPrize4"  id="navi">
   			</div>
   		</ion-col>
   	</ion-row>
@@ -67,35 +67,35 @@
 			<ion-col id="container" (click)="boxClicked(2,1,5)">
 				<div [style.backgroundColor]="getStyle(5)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize5"  id="navi">
+  			<div *ngIf="showp5" style="background-color:red;height:60px" [ngClass]="dropPrize5"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(2,2,6)">
 				<div [style.backgroundColor]="getStyle(6)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize6"  id="navi">
+  			<div *ngIf="showp6" style="background-color:red;height:60px" [ngClass]="dropPrize6"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(2,3,7)">
 				<div [style.backgroundColor]="getStyle(7)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize7"  id="navi">
+  			<div *ngIf="showp7" style="background-color:red;height:60px" [ngClass]="dropPrize7"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(2,4,8)">
 				<div [style.backgroundColor]="getStyle(8)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize8"  id="navi">
+  			<div *ngIf="showp8" style="background-color:red;height:60px" [ngClass]="dropPrize8"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(2,5,9)">
 				<div [style.backgroundColor]="getStyle(9)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize9"  id="navi">
+  			<div *ngIf="showp9" style="background-color:red;height:60px" [ngClass]="dropPrize9"  id="navi">
   			</div>
   		</ion-col>
 
@@ -105,73 +105,72 @@
 			<ion-col id="container" (click)="boxClicked(3,1,10)">
 				<div [style.backgroundColor]="getStyle(10)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize10"  id="navi">
+  			<div *ngIf="showp10" style="background-color:red;height:60px" [ngClass]="dropPrize10"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(3,2,11)">
 				<div [style.backgroundColor]="getStyle(11)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize11"  id="navi">
+  			<div *ngIf="showp11" style="background-color:red;height:60px" [ngClass]="dropPrize11"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(3,3,12)">
 				<div [style.backgroundColor]="getStyle(12)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize12"  id="navi">
+  			<div *ngIf="showp12" style="background-color:red;height:60px" [ngClass]="dropPrize12"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(3,4,13)">
 				<div [style.backgroundColor]="getStyle(13)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize13"  id="navi">
+  			<div *ngIf="showp13" style="background-color:red;height:60px" [ngClass]="dropPrize13"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(3,5,14)">
 				<div [style.backgroundColor]="getStyle(14)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize14"  id="navi">
+  			<div *ngIf="showp14" style="background-color:red;height:60px" [ngClass]="dropPrize14"  id="navi">
   			</div>
   		</ion-col>
-
   	</ion-row>
 
 		<ion-row style="margin-top:5em;">
 			<ion-col id="container" (click)="boxClicked(4,1,15)">
 				<div [style.backgroundColor]="getStyle(15)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize15"  id="navi">
+  			<div *ngIf="showp15" style="background-color:red;height:60px" [ngClass]="dropPrize15"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(4,2,16)">
 				<div [style.backgroundColor]="getStyle(16)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize16"  id="navi">
+  			<div *ngIf="showp16" style="background-color:red;height:60px" [ngClass]="dropPrize16"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(4,3,17)">
 				<div [style.backgroundColor]="getStyle(17)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize17"  id="navi">
+  			<div *ngIf="showp17" style="background-color:red;height:60px" [ngClass]="dropPrize17"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(4,4,18)">
 				<div [style.backgroundColor]="getStyle(18)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize18"  id="navi">
+  			<div *ngIf="showp18" style="background-color:red;height:60px" [ngClass]="dropPrize18"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(4,5,19)">
 				<div [style.backgroundColor]="getStyle(19)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize19"  id="navi">
+  			<div *ngIf="showp19" style="background-color:red;height:60px" [ngClass]="dropPrize19"  id="navi">
   			</div>
   		</ion-col>
 
@@ -181,35 +180,35 @@
 			<ion-col id="container" (click)="boxClicked(5,1,20)">
 				<div [style.backgroundColor]="getStyle(20)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize20"  id="navi">
+  			<div *ngIf="showp20" style="background-color:red;height:60px" [ngClass]="dropPrize20"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(5,2,21)">
 				<div [style.backgroundColor]="getStyle(21)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize21"  id="navi">
+  			<div *ngIf="showp21" style="background-color:red;height:60px" [ngClass]="dropPrize21"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(5,3,22)">
 				<div [style.backgroundColor]="getStyle(22)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize22"  id="navi">
+  			<div *ngIf="showp22" style="background-color:red;height:60px" [ngClass]="dropPrize22"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(5,4,23)">
 				<div [style.backgroundColor]="getStyle(23)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize23"  id="navi">
+  			<div *ngIf="showp23" style="background-color:red;height:60px" [ngClass]="dropPrize23"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(5,5,24)">
 				<div [style.backgroundColor]="getStyle(24)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize24"  id="navi">
+  			<div *ngIf="showp24" style="background-color:red;height:60px" [ngClass]="dropPrize24"  id="navi">
   			</div>
   		</ion-col>
 
@@ -219,35 +218,35 @@
 			<ion-col id="container" (click)="boxClicked(6,1,25)">
 				<div [style.backgroundColor]="getStyle(25)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize25"  id="navi">
+  			<div *ngIf="showp25" style="background-color:red;height:60px" [ngClass]="dropPrize25"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(6,2,26)">
 				<div [style.backgroundColor]="getStyle(26)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize26"  id="navi">
+  			<div *ngIf="showp26" style="background-color:red;height:60px" [ngClass]="dropPrize26"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(6,3,27)">
 				<div [style.backgroundColor]="getStyle(27)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize27"  id="navi">
+  			<div *ngIf="showp27" style="background-color:red;height:60px" [ngClass]="dropPrize27"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(6,4,28)">
 				<div [style.backgroundColor]="getStyle(28)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize28"  id="navi">
+  			<div *ngIf="showp28" style="background-color:red;height:60px" [ngClass]="dropPrize28"  id="navi">
   			</div>
   		</ion-col>
 
 			<ion-col id="container" (click)="boxClicked(6,5,29)">
 				<div [style.backgroundColor]="getStyle(29)" style="background-color:yellow;border-radius:30px;height:60px;" id="infoi">
 				</div>
-  			<div style="background-color:red;height:60px" [ngClass]="dropPrize29"  id="navi">
+  			<div *ngIf="showp29" style="background-color:red;height:60px" [ngClass]="dropPrize29"  id="navi">
   			</div>
   		</ion-col>
 
